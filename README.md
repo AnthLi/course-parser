@@ -1,6 +1,6 @@
 #course-parser
 
-A course parsing script written in Python to extract all current UMass Amherst courses offered from each HTML file corresponding to the first letter of each subject on SPIRE.
+A course parsing script written in Python to extract from SPIRE's HTML files containing all UMass Amherst classes offered for the current semester.
 
 ## Usage
 ```bash
