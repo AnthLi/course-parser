@@ -64,7 +64,7 @@ def getClasses(catalogFile):
       if line.replace(line[line.index(" "):], "").isupper():
         subject = line.replace(line[line.index(" "):], "")
         with open(sFile, "a") as subjects:
-          subjects.write(course + "\n") # Write the subject to a separate file
+          subjects.write(subject + "\n") # Write the subject to a separate file
 
     # Write each complete course number to "courses"
     try:
@@ -74,7 +74,7 @@ def getClasses(catalogFile):
       if subject not in exclude and subject not in line:
         with open(cFile, "a") as courses:
           # Write the course with its subject, number, and name
-          courses.write(course.strip("\n") + num.strip("\n") + " - " + 
+          courses.write(subject.strip("\n") + num.strip("\n") + " - " + 
             line.strip("\n"))
           courses.write("\n")
 
